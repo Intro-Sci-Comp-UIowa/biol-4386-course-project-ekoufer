@@ -1,6 +1,6 @@
-#*Searching for the taxonomic classification of the protein JIP3: Organizing its Relatives.
+# *Searching for the taxonomic classification of the protein JIP3: Organizing its Relatives.*
 
-##Introduction and Background
+## Introduction and Background
 JIP3 comes from the JIP family of MAPK scaffolding proteins. MAPK signaling affects axon susceptibility to pathological degeneration, yet the specific ways MAPK controls these outcomes are unknown. The JIP proteins have a scaffolding role in MAPK signaling. Little is known about the JIP scaffolding proteins, but JIP3, when inhibited, is found to slow down the degeneration of axons in response to injury or chemotherapy-induced neuropathy. Due to the need for more information on the function of the JIPs, constructing a taxonomic classification of the proteins would be a useful source of information. The JIP family contains other scaffolding proteins like JIP1, JIP2, and JIP4. Although JIP3 has been shown to limit degeneration more than its other family members, the Summers lab continues to measure neurodegeneration conditions for each JIP protein, including inhibiting groups of JIP proteins at one time. 
 
 To document and visualize the varying relatedness of each JIP protein, I want to create a phylogenic tree to create a list of proteins related to JIP3, which could help develop a better understanding of its degenerative function. If I have sufficient time after I’ve created a satisfactory tree output, I’d like to repeat the same steps with the remaining JIPs 1,2 and 4. The Summers lab uses mouse embryos as a model for the human scaffolding proteins so I will conduct my BLAST search for related human proteins. 
@@ -10,24 +10,26 @@ The article Evolution of Osomosensory MAP Kinase Signaling Pathways by Dietmar K
 After generating the tree, the information will be useful in better understanding JIP3’s function. JIP3 is involved in the DLK pathway promoting degeneration in neurons after injury, but the protein’s specific role is unknown. By looking at its relatives in the JNK family and the broader MAPK family, the tree could hint at its relatives and, therefore, where its function could’ve stemmed from. The tree won’t be able to predict the exact protein functions, but it will serve as an initial step in exploring potential functions to glean from these aligned sequences. By looking into the functions of JIP3’s close relatives, there could be the potential to run experiments and view its scaffolding under the lens of its relationship with other JNKs or MAPKs, possibly working similarly to these better-defined relatives. 
 
 **Fig 2. Radial phylogenic tree of MAP kinases from C. Elegans and H. Sapiens**
+
 shows paralogous MAP kinases in Homo Sapiens, and side A shows the same in Caenorhabditis elegans. The human tree shows examples of subfamilies within JNK whose activation is facilitated by the JIP proteins. The alignment and analysis process to create this comparison was meant to provide input about the evolutionary history of MAP kinases.
 
-##Reference
+## Reference
 Dietmar Kültz, Evolution of Osmosensory MAP Kinase Signaling Pathways, American Zoologist, Volume 41, Issue 4, August 2001, Pages 743–757, https://doi.org/10.1093/icb/41.4.743
 
-##Expected Figure
+## Expected Figure
 The expected figure will look similar to Fig 2 but in a linear, cladogram form. Suppose my initial run with my selected query sequence is successful. In that case, I plan to produce more of a similar figure for other proteins studied in the lab or expand my first figure to include more distant relatives.
 
-##Materials and Methods
+## Materials and Methods
 For the data acquisition, I first searched JIP3's protein succession number in Uniprot and then inputted it into a BLAST search. Most hits came back as kinase isoforms of the same kinase, so I searched for a hit that wasn't a close match/an isoform and still had a good E value and high similarity to my query. I selected a Homo sapien sequence matching the JNK family scaffolding proteins, specifically, JIP3. To search for more sequences, I had to predict which proteins in this MAPK group could be related to JIP3. I selected what I thought would be the most closely related, JIP2; some proteins I thought would be a bit more distant, some MAPK proteins, one more distant called SARM1, which I chose due to its significance in autoregulation, and finally, I selected hemoglobin to act as an outgroup for the tree. All sequences I found through BLASTp. 
 
 After compiling the sequence data into one FASTA file, I uploaded the data to NGPhylogeny through the tool's "one-click" portal. I used NGPhylogeny to align my sequences and construct my tree. Before identifying the tree useful in my analysis, I looked through the alignment viewer to ensure valid conservation points across the proteins (except for the outgroup). I plan on using this tree to begin interpreting the function of the JIP3 protein. The tree is set with parameters that ignore branch lengths and appear rooted due to my inclusion of the hemoglobin outgroup. 
 
 My next step is to apply for more work regarding the curation of sequences and the justification behind including them in the figure. I will continue to develop this figure by researching possible relatives of JIP3 (not just MAPK placeholder proteins) and therefore have a strong justification based on function and sequence similarity to compare to JIP3's sequence and the hemoglobin outgroup. In addition to better curation, I would like to apply information from the book Phylogenetic Trees Made Easy By Barry G. Hill to both the curation process and my explanation of interpreting the alignment data and tree branching. I would also like to change the branch names to common ones as I progress. 
 
-##Results
+## Results
 Figure 1 shows the first iteration of the phylogenetic tree. The sequence of interest is the bottommost branch, “MAPK8IP3,” which is the JIP3 scaffolding protein: its closest relative on the tree represents the protein JIP1 which also serves as a scaffolding protein in neurodegeneration. This could be useful in determining the relationship (or lack of) between these proteins during the process of degeneration and if the known characteristics of JIP1 could reveal some of the processes of JIP3 and highlight the differences between the two. One interesting aspect of the tree is the relatedness of the two JIP proteins to their next relative, the SARM1 protein. This protein also acts in axonal death but has a TIR C-terminal domain, unlike the other two proteins with a JUN C-terminal domain. 
 
 **Fig 1. First Iteration of the JIP3 phylogenetic tree**
+
 The bottommost branch shows the JIP3 protein of interest and its closest relative, JIP1. All branch names are taken straight from the BLAST output descriptions. 
 
